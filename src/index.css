@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 97%;
+    --foreground: 0 0% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+    --primary: 19 98% 51%;
+    --primary-foreground: 0 0% 0%;
+    --secondary: 30 20% 94%;
+    --secondary-foreground: 0 0% 15%;
+    --muted: 0 0% 94%;
+    --muted-foreground: 0 0% 40%;
+    --accent: 43 100% 50%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 88%;
+    --input: 0 0% 88%;
+    --ring: 19 98% 51%;
+    --radius: 0.625rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    font-size: 16px;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: "Segoe UI", Arial, sans-serif;
+  }
+}
+
+@layer components {
+  .fb-card {
+    @apply bg-white rounded-xl border border-demo-line shadow-card;
+  }
+  .fb-btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg font-semibold transition-all select-none;
+  }
+  .fb-btn-primary {
+    @apply fb-btn bg-demo-blue text-black hover:bg-demo-green hover:text-white shadow-sm px-5 py-2.5 text-[15px];
+  }
+  .fb-btn-outline {
+    @apply fb-btn border border-demo-blue/40 text-demo-blue bg-white hover:bg-demo-light px-5 py-2.5 text-[15px];
+  }
+  .fb-btn-ghost {
+    @apply fb-btn text-demo-dark hover:bg-demo-mist px-4 py-2 text-[15px];
+  }
+  .fb-btn-danger {
+    @apply fb-btn bg-red-600 text-white hover:bg-red-700 px-5 py-2.5 text-[15px];
+  }
+  .fb-btn:disabled {
+    @apply opacity-40 cursor-not-allowed;
+  }
+  .fb-input {
+    @apply w-full rounded-lg border border-demo-line bg-white px-3.5 py-2.5 text-[15px] outline-none focus:ring-2 focus:ring-demo-blue/30 focus:border-demo-blue;
+  }
+  .fb-label {
+    @apply text-[13px] font-semibold uppercase tracking-wide text-slate-500;
+  }
+}
