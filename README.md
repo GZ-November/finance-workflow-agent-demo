@@ -7,9 +7,6 @@ An interactive portfolio example showing how I translate business interviews and
 本项目是用于求职面试的交互原型示例，展示我如何通过业务访谈（business interviews）理解金融业务需求、拆解 finance workflows，识别 AI Agent 的应用机会，并将需求转化为可演示的产品流程。
 
 **全部是 hard-coded 的纯前端模拟，没有任何真实后端系统，也没有调用真实 AI 模型。** 本示例用于说明我的业务理解、工作流拆解与 AI Agent 落地方案设计能力，不代表已经完成生产级部署，也不代表任何机构实际采用或认可了该方案。
-
-> 📖 **Interviewers & Reviewers**: Check out the comprehensive [Interview & Presentation Playbook (STAR Framework & Q&A Defense)](docs/interview-guide.md) for live demo talking points and technical defense strategies.
-
 ---
 
 ## What this demonstrates / 展示能力
@@ -173,7 +170,6 @@ A production implementation would require backend services, model integration, s
 - `src/demo/extractedTerms.ts` — field grouping and provenance lineage tagging.
 - `src/pages/` — Trader, Operations and review screens.
 - `src/components/` — reusable UI, preview and Excel viewer components.
-- `docs/interview-guide.md` — interview playbook, STAR storytelling, and Q&A defense.
 - `docs/` — documentation assets and illustrations.
 
 ---
